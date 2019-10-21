@@ -2,41 +2,61 @@
 <html lang="en" dir="ltr">
   <head>
     <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-lime.css">
     <meta charset="utf-8">
     <title></title>
   </head>
-  <body>
-    <div class="tic-tac-toe-container">
-      <div class="square .item-1">
+  <body class="flex-row w3-theme-l5">
 
-      </div>
-      <div class="square .item-2">
+    <div class="flex-column">
+      <header class="flex-row w3-theme-l4">
+        <h3>Tic Tac Toe</h3>
+        <i class="material-icons menu-icon">menu</i>
+      </header>
+      <div class="tic-tac-toe-container">
+        <div class="square .item-1">
 
-      </div>
-      <div class="square .item-3">
+        </div>
+        <div class="square .item-2">
 
-      </div>
-      <div class="square .item-4">
+        </div>
+        <div class="square .item-3">
 
-      </div>
-      <div class="square .item-5">
+        </div>
+        <div class="square .item-4">
 
-      </div>
-      <div class="square .item-6">
+        </div>
+        <div class="square .item-5">
 
-      </div>
-      <div class="square .item-7">
+        </div>
+        <div class="square .item-6">
 
-      </div>
-      <div class="square .item-8">
+        </div>
+        <div class="square .item-7">
 
-      </div>
-      <div class="square .item-9">
+        </div>
+        <div class="square .item-8">
 
+        </div>
+        <div class="square .item-9">
+
+        </div>
       </div>
+      <footer class="w3-theme-d2">
+        <p>All Rights Reserved</p>
+      </footer>
     </div>
-    <script type="text/javascript" src="main.js">
-
-    </script>
+    <div class="stats w3-theme-d5">
+        <h1>Current Player: </h1>
+        <hr>
+        <button class="reset-button w3-theme-l1" type="button" name="button" id="reset-button">Reset Game</button>
+        <hr>
+        <h5>Player 1 Rounds Won: <span id="p1">0</span></h5>
+        <h5>Player 2 Rounds Won: <span id="p2">0</span></h5>
+        <h5>Draws: <span class="draws">0</span></h5>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
