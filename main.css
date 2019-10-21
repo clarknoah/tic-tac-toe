@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+
+}
+body {
+  width: 100vh;
+  height: 100vw;
+}
+.tic-tac-toe-container {
+  display: grid;
+  grid-template-rows: 100px 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+
+}
+
+.square {
+  border: 1px black solid;
+  width: 100px;
+  height: 100px;
+}
+
+.item-1 {
+
+}
+.item-2 {
+
+}
+
+.item-3 {
+
+}
+
+.item-4 {
+
+}
+
+.item-5 {
+
+}
+
+.item-6 {
+
+}
+.item-7 {
+
+}
+
+.item-8 {
+
+}
+
+.item-9 {
+
+}
