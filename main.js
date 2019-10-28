@@ -5,11 +5,12 @@
 let togglePlayer = true;
 let squares = document.querySelectorAll(".square");
 let button = document.querySelector("#reset-button");
-let currentPlayer = document.querySelector("h1");
+let currentPlayer = document.querySelector("#currentPlayer");
 let p1Won = document.querySelector("#p1");
 let p2Won = document.querySelector("#p2");
 let draws = document.querySelector(".draws");
-currentPlayer.innerText = "Current Player: 1";
+currentPlayer.innerText = "1";
+currentPlayer.classList.add("red-item");
 let menuButton = document.querySelector(".menu-icon");
 let stats = document.querySelector(".stats");
 menuButton.addEventListener("click",toggleMenu);
@@ -90,7 +91,8 @@ function resetGame(){
   squares.forEach(square => {
     square.classList.remove("red-item");
     square.classList.remove("blue-item");
-    currentPlayer.innerText = "Current Player: 1";
+    currentPlayer.innerText = "1";
+    currentPlayer.classList.add("red-item");
     togglePlayer = true;
   })
 }
@@ -101,10 +103,15 @@ function determineColor(){
   let result;
     if(firstPlayerTurn){
       result = "red-item";
-      currentPlayer.innerText = "Current Player: 2";
+      currentPlayer.innerText = "2";
+      currentPlayer.classList.add("blue-item");
+      currentPlayer.classList.remove("red-item");
+
     }else{
       result = "blue-item";
-      currentPlayer.innerText = "Current Player: 1";
+      currentPlayer.innerText = "1";
+      currentPlayer.classList.add("red-item");
+      currentPlayer.classList.remove("blue-item");
     }
 
     return result;
